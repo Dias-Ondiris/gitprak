@@ -1,0 +1,74 @@
+[
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "section",
+        "kind": 6,
+        "importPath": "prak5.zadanie1",
+        "description": "prak5.zadanie1",
+        "peekOfCode": "class section:\n    def __init__(self,fname,kurs):\n        self.name=fname\n        self.kurs=kurs\ndef sort(a):\n    for i in a:\n        for j in a:\n            if i.kurs<j.kurs:\n                tempk=i.kurs\n                tempn=i.name",
+        "detail": "prak5.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "sort",
+        "kind": 2,
+        "importPath": "prak5.zadanie1",
+        "description": "prak5.zadanie1",
+        "peekOfCode": "def sort(a):\n    for i in a:\n        for j in a:\n            if i.kurs<j.kurs:\n                tempk=i.kurs\n                tempn=i.name\n                i.kurs=j.kurs\n                j.kurs=tempk\n                i.name=j.name\n                j.name=tempn",
+        "detail": "prak5.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "section",
+        "kind": 6,
+        "importPath": "prak5.zadanie2",
+        "description": "prak5.zadanie2",
+        "peekOfCode": "class section:\n    def __init__(self,fname,b1,b2,b3):\n        self.name=fname\n        self.b1=b1\n        self.b2=b2\n        self.b3=b3\ndef select(a,name):\n    for i in a:\n        if i.name==name:\n            print(f\"{i.name}\\t{i.b1}\\t{i.b2}\\t{i.b3}\")",
+        "detail": "prak5.zadanie2",
+        "documentation": {}
+    },
+    {
+        "label": "select",
+        "kind": 2,
+        "importPath": "prak5.zadanie2",
+        "description": "prak5.zadanie2",
+        "peekOfCode": "def select(a,name):\n    for i in a:\n        if i.name==name:\n            print(f\"{i.name}\\t{i.b1}\\t{i.b2}\\t{i.b3}\")\n            return i\ndias=[]\nn=int(input(\"n:\"))\nfor j in range(n):\n    dias.append(section(input(\"fname:\"),int(input(\"baga 1:\")),int(input(\"baga 2:\")),int(input(\"baga 3:\"))))\nd=select(dias,input(\"student name:\"))",
+        "detail": "prak5.zadanie2",
+        "documentation": {}
+    },
+    {
+        "label": "ticket_random",
+        "kind": 2,
+        "importPath": "prak5.zadanie5",
+        "description": "prak5.zadanie5",
+        "peekOfCode": "def ticket_random():\n    ticket=set()\n    while len(ticket)<6:\n        ticket.add(random.randint(1,49))\n    return sorted(ticket)\nprint(ticket_random())",
+        "detail": "prak5.zadanie5",
+        "documentation": {}
+    },
+    {
+        "label": "ticket_random",
+        "kind": 2,
+        "importPath": "prak5.zadanie6",
+        "description": "prak5.zadanie6",
+        "peekOfCode": "def ticket_random():\n    ticket=set()\n    while len(ticket)<6:\n        ticket.add(random.randint(1,49))\n    return ticket\ndef issort(a):\n    b=a\n    for i in b:\n        for j in b:\n            if i<j:",
+        "detail": "prak5.zadanie6",
+        "documentation": {}
+    },
+    {
+        "label": "issort",
+        "kind": 2,
+        "importPath": "prak5.zadanie6",
+        "description": "prak5.zadanie6",
+        "peekOfCode": "def issort(a):\n    b=a\n    for i in b:\n        for j in b:\n            if i<j:\n                t=i\n                i=j\n                j=t\n    if a==b:\n        return True",
+        "detail": "prak5.zadanie6",
+        "documentation": {}
+    }
+]
