@@ -9,6 +9,24 @@
         "documentation": {}
     },
     {
+        "label": "ticket_random",
+        "kind": 2,
+        "importPath": "prak5.tempCodeRunnerFile",
+        "description": "prak5.tempCodeRunnerFile",
+        "peekOfCode": "def ticket_random():\n    ticket=set()\n    while len(ticket)<6:\n        ticket.add(random.randint(1,49))\n    return ticket\ndef issort(a):\n    b=a\n    for i in a:\n        if i==min(b):\n            print(i)",
+        "detail": "prak5.tempCodeRunnerFile",
+        "documentation": {}
+    },
+    {
+        "label": "issort",
+        "kind": 2,
+        "importPath": "prak5.tempCodeRunnerFile",
+        "description": "prak5.tempCodeRunnerFile",
+        "peekOfCode": "def issort(a):\n    b=a\n    for i in a:\n        if i==min(b):\n            print(i)\n        b.discard(min(b))\n    ''' if a==sorted(a):\n        return True\n    else:\n        return False '''",
+        "detail": "prak5.tempCodeRunnerFile",
+        "documentation": {}
+    },
+    {
         "label": "section",
         "kind": 6,
         "importPath": "prak5.zadanie1",
@@ -58,7 +76,7 @@
         "kind": 2,
         "importPath": "prak5.zadanie6",
         "description": "prak5.zadanie6",
-        "peekOfCode": "def ticket_random():\n    ticket=set()\n    while len(ticket)<6:\n        ticket.add(random.randint(1,49))\n    return ticket\ndef issort(a):\n    b=a\n    for i in b:\n        for j in b:\n            if i<j:",
+        "peekOfCode": "def ticket_random():\n    ticket=set()\n    while len(ticket)<6:\n        ticket.add(random.randint(1,49))\n    return ticket\ndef issort(a):\n    if a==sorted(a):\n        return True\n    else:\n        return False",
         "detail": "prak5.zadanie6",
         "documentation": {}
     },
@@ -67,7 +85,7 @@
         "kind": 2,
         "importPath": "prak5.zadanie6",
         "description": "prak5.zadanie6",
-        "peekOfCode": "def issort(a):\n    b=a\n    for i in b:\n        for j in b:\n            if i<j:\n                t=i\n                i=j\n                j=t\n    if a==b:\n        return True",
+        "peekOfCode": "def issort(a):\n    if a==sorted(a):\n        return True\n    else:\n        return False\ndsa=ticket_random()\nprint(dsa)\nprint(issort(dsa))",
         "detail": "prak5.zadanie6",
         "documentation": {}
     }

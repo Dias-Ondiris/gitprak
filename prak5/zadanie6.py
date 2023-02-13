@@ -5,14 +5,7 @@ def ticket_random():
         ticket.add(random.randint(1,49))
     return ticket
 def issort(a):
-    b=a
-    for i in b:
-        for j in b:
-            if i<j:
-                t=i
-                i=j
-                j=t
-    if a==b:
+    if a==sorted(a):
         return True
     else:
         return False
