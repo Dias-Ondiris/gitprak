@@ -9,6 +9,87 @@
         "documentation": {}
     },
     {
+        "label": "countries_and_rivers",
+        "kind": 5,
+        "importPath": ".vscode.prak7.zadanie1",
+        "description": ".vscode.prak7.zadanie1",
+        "peekOfCode": "countries_and_rivers = {\n    'Қазақстан': ['Ертіс', 'Іртіш', 'Шу', 'Тобыл', 'Қарағанды'],\n    'Россия': ['Волга', 'Дон', 'Обь'],\n    'Канада': ['Святой Лаврентий', 'Маккензи'],\n    'США': ['Миссисипи', 'Колорадо', 'Колумбия'],\n    'Китай': ['Янцзы', 'Хуанхэ', 'Гань'],\n    'Бразилия': ['Амазонка', 'Парана', 'Сан-Франсиску'],\n}\n# Ен-өзен тізімін көрсетеміз\nprint('Ел мен өзендер тізімі:')",
+        "detail": ".vscode.prak7.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "commentators",
+        "kind": 5,
+        "importPath": ".vscode.prak7.zadanie2",
+        "description": ".vscode.prak7.zadanie2",
+        "peekOfCode": "commentators = set() \nwhile True:\n    comment = input() \n    if not comment: \n        break\n    name, text = comment.split(':')  \n    commentators.add(name.strip())\nprint(f'Бірегей комментатор саны: {len(commentators)}')",
+        "detail": ".vscode.prak7.zadanie2",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": ".vscode.prak7.zadanie3",
+        "description": ".vscode.prak7.zadanie3",
+        "peekOfCode": "n = int(input()) \nphone_book = {}  \nfor i in range(n):\n    phone, name = input().split()  \n    phone_book[name] = phone \nquery = input()  \nif query in phone_book :\n    print(phone_book[query]) \nelse:\n    print('Телефонкітапшасында жоқ')  ",
+        "detail": ".vscode.prak7.zadanie3",
+        "documentation": {}
+    },
+    {
+        "label": "phone_book",
+        "kind": 5,
+        "importPath": ".vscode.prak7.zadanie3",
+        "description": ".vscode.prak7.zadanie3",
+        "peekOfCode": "phone_book = {}  \nfor i in range(n):\n    phone, name = input().split()  \n    phone_book[name] = phone \nquery = input()  \nif query in phone_book :\n    print(phone_book[query]) \nelse:\n    print('Телефонкітапшасында жоқ')  \nprint('Қосу?иа/жоқ')",
+        "detail": ".vscode.prak7.zadanie3",
+        "documentation": {}
+    },
+    {
+        "label": "query",
+        "kind": 5,
+        "importPath": ".vscode.prak7.zadanie3",
+        "description": ".vscode.prak7.zadanie3",
+        "peekOfCode": "query = input()  \nif query in phone_book :\n    print(phone_book[query]) \nelse:\n    print('Телефонкітапшасында жоқ')  \nprint('Қосу?иа/жоқ')\njauap=input()\nif jauap=='иа':\n    phone_book[query]=input(\"номер:\")\nfor name, phone in phone_book.items():",
+        "detail": ".vscode.prak7.zadanie3",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": ".vscode.prak7.zadanie4",
+        "description": ".vscode.prak7.zadanie4",
+        "peekOfCode": "n = int(input()) \nvacation_schedule = {} \nfor i in range(n):\n    name, day, month = input().split()\n    if name not in vacation_schedule:\n        vacation_schedule[name] = []\n    vacation_schedule[name].append(month)\nquery_month = input()\nresult = []\nfor name, months in vacation_schedule.items():",
+        "detail": ".vscode.prak7.zadanie4",
+        "documentation": {}
+    },
+    {
+        "label": "vacation_schedule",
+        "kind": 5,
+        "importPath": ".vscode.prak7.zadanie4",
+        "description": ".vscode.prak7.zadanie4",
+        "peekOfCode": "vacation_schedule = {} \nfor i in range(n):\n    name, day, month = input().split()\n    if name not in vacation_schedule:\n        vacation_schedule[name] = []\n    vacation_schedule[name].append(month)\nquery_month = input()\nresult = []\nfor name, months in vacation_schedule.items():\n    if query_month in months:",
+        "detail": ".vscode.prak7.zadanie4",
+        "documentation": {}
+    },
+    {
+        "label": "query_month",
+        "kind": 5,
+        "importPath": ".vscode.prak7.zadanie4",
+        "description": ".vscode.prak7.zadanie4",
+        "peekOfCode": "query_month = input()\nresult = []\nfor name, months in vacation_schedule.items():\n    if query_month in months:\n        result.append(name)\nif result:\n    print(*result)\nelse:\n    print(\"Никто не идет в отпуск в указанный месяц\")",
+        "detail": ".vscode.prak7.zadanie4",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": ".vscode.prak7.zadanie4",
+        "description": ".vscode.prak7.zadanie4",
+        "peekOfCode": "result = []\nfor name, months in vacation_schedule.items():\n    if query_month in months:\n        result.append(name)\nif result:\n    print(*result)\nelse:\n    print(\"Никто не идет в отпуск в указанный месяц\")",
+        "detail": ".vscode.prak7.zadanie4",
+        "documentation": {}
+    },
+    {
         "label": "ticket_random",
         "kind": 2,
         "importPath": "prak5.tempCodeRunnerFile",
