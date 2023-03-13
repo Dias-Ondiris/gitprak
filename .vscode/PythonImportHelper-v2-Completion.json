@@ -88,5 +88,113 @@
         "peekOfCode": "def issort(a):\n    if a==sorted(a):\n        return True\n    else:\n        return False\ndsa=ticket_random()\nprint(dsa)\nprint(issort(dsa))",
         "detail": "prak5.zadanie6",
         "documentation": {}
+    },
+    {
+        "label": "create_tuple",
+        "kind": 2,
+        "importPath": "prak6.zadanie1",
+        "description": "prak6.zadanie1",
+        "peekOfCode": "def create_tuple(size, start, end):\n    return tuple(random.randint(start, end) for _ in range(size))\n# Создаем два кортежа\ntuple1 = create_tuple(10, 0, 5)\ntuple2 = create_tuple(10, -5, 0)\n# Объединяем два кортежа\ntuple3 = tuple1 + tuple2\n# Считаем количество нулей\ncount_of_zeros = tuple3.count(0)\n# Выводим результаты",
+        "detail": "prak6.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "tuple1",
+        "kind": 5,
+        "importPath": "prak6.zadanie1",
+        "description": "prak6.zadanie1",
+        "peekOfCode": "tuple1 = create_tuple(10, 0, 5)\ntuple2 = create_tuple(10, -5, 0)\n# Объединяем два кортежа\ntuple3 = tuple1 + tuple2\n# Считаем количество нулей\ncount_of_zeros = tuple3.count(0)\n# Выводим результаты\nprint(\"1 кортеж: \", tuple1)\nprint(\"2 кортеж: \", tuple2)\nprint(\"Объединенный кортеж: \", tuple3)",
+        "detail": "prak6.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "tuple2",
+        "kind": 5,
+        "importPath": "prak6.zadanie1",
+        "description": "prak6.zadanie1",
+        "peekOfCode": "tuple2 = create_tuple(10, -5, 0)\n# Объединяем два кортежа\ntuple3 = tuple1 + tuple2\n# Считаем количество нулей\ncount_of_zeros = tuple3.count(0)\n# Выводим результаты\nprint(\"1 кортеж: \", tuple1)\nprint(\"2 кортеж: \", tuple2)\nprint(\"Объединенный кортеж: \", tuple3)\nprint(\"Количество нулей в объединенном кортеже: \", count_of_zeros)",
+        "detail": "prak6.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "tuple3",
+        "kind": 5,
+        "importPath": "prak6.zadanie1",
+        "description": "prak6.zadanie1",
+        "peekOfCode": "tuple3 = tuple1 + tuple2\n# Считаем количество нулей\ncount_of_zeros = tuple3.count(0)\n# Выводим результаты\nprint(\"1 кортеж: \", tuple1)\nprint(\"2 кортеж: \", tuple2)\nprint(\"Объединенный кортеж: \", tuple3)\nprint(\"Количество нулей в объединенном кортеже: \", count_of_zeros)",
+        "detail": "prak6.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "count_of_zeros",
+        "kind": 5,
+        "importPath": "prak6.zadanie1",
+        "description": "prak6.zadanie1",
+        "peekOfCode": "count_of_zeros = tuple3.count(0)\n# Выводим результаты\nprint(\"1 кортеж: \", tuple1)\nprint(\"2 кортеж: \", tuple2)\nprint(\"Объединенный кортеж: \", tuple3)\nprint(\"Количество нулей в объединенном кортеже: \", count_of_zeros)",
+        "detail": "prak6.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "matryoshka",
+        "kind": 5,
+        "importPath": "prak6.zadanie2",
+        "description": "prak6.zadanie2",
+        "peekOfCode": "matryoshka = (42, (1.67, (\"hello\", (1+2j, (\"world\", ())))))\nprint(matryoshka[0],matryoshka[1][0],matryoshka[1][1][0],matryoshka[1][1][1][0],matryoshka[1][1][1][1][0])",
+        "detail": "prak6.zadanie2",
+        "documentation": {}
+    },
+    {
+        "label": "week_days",
+        "kind": 5,
+        "importPath": "prak6.zadanie3",
+        "description": "prak6.zadanie3",
+        "peekOfCode": "week_days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']\nexpenses = [[] for _ in range(len(week_days))]\nfor i, day in enumerate(week_days):\n    print(f'Enter expenses for {day}:')\n    while True:\n        category = input('Enter category of expense or \"done\" to finish: ')\n        if category == 'done':\n            break\n        amount = float(input('Enter amount of expense: '))\n        expenses[i].append((category, amount))",
+        "detail": "prak6.zadanie3",
+        "documentation": {}
+    },
+    {
+        "label": "expenses",
+        "kind": 5,
+        "importPath": "prak6.zadanie3",
+        "description": "prak6.zadanie3",
+        "peekOfCode": "expenses = [[] for _ in range(len(week_days))]\nfor i, day in enumerate(week_days):\n    print(f'Enter expenses for {day}:')\n    while True:\n        category = input('Enter category of expense or \"done\" to finish: ')\n        if category == 'done':\n            break\n        amount = float(input('Enter amount of expense: '))\n        expenses[i].append((category, amount))\nfor i, day in enumerate(week_days):",
+        "detail": "prak6.zadanie3",
+        "documentation": {}
+    },
+    {
+        "label": "total_expenses",
+        "kind": 5,
+        "importPath": "prak6.zadanie3",
+        "description": "prak6.zadanie3",
+        "peekOfCode": "total_expenses = 0\nfor i, day in enumerate(week_days):\n    daily_expenses = sum(expense[1] for expense in expenses[i])\n    print(f'Total expenses for {day}: {daily_expenses}')\n    total_expenses += daily_expenses\nprint(f'Total expenses for the week: {total_expenses}')",
+        "detail": "prak6.zadanie3",
+        "documentation": {}
+    },
+    {
+        "label": "students",
+        "kind": 5,
+        "importPath": "prak6.zadanie4",
+        "description": "prak6.zadanie4",
+        "peekOfCode": "students = input(\"Введите имена студентов через пробел: \").split()\n# Фильтрация имен по фрагменту \"ва\"\nfiltered_names = [name for name in students if \"ва\" in name]\n# Вывод имен через пробел\nprint(\" \".join(filtered_names))",
+        "detail": "prak6.zadanie4",
+        "documentation": {}
+    },
+    {
+        "label": "filtered_names",
+        "kind": 5,
+        "importPath": "prak6.zadanie4",
+        "description": "prak6.zadanie4",
+        "peekOfCode": "filtered_names = [name for name in students if \"ва\" in name]\n# Вывод имен через пробел\nprint(\" \".join(filtered_names))",
+        "detail": "prak6.zadanie4",
+        "documentation": {}
+    },
+    {
+        "label": "kazakh_to_latin",
+        "kind": 2,
+        "importPath": "prak6.zadanie5",
+        "description": "prak6.zadanie5",
+        "peekOfCode": "def kazakh_to_latin(text):\n    kazakh_latin_table = {\n        'А': 'A', 'а': 'a', 'Ә': 'Á', 'ә': 'á', 'Б': 'B', 'б': 'b', 'В': 'V', 'в': 'v', 'Г': 'G', 'г': 'g',\n        'Ғ': 'Ğ', 'ғ': 'ğ', 'Д': 'D', 'д': 'd', 'Е': 'E', 'е': 'e', 'Ё': 'Yo', 'ё': 'yo', 'Ж': 'J', 'ж': 'j',\n        'З': 'Z', 'з': 'z', 'И': 'I', 'и': 'i', 'Й': 'Ý', 'й': 'ý', 'К': 'K', 'к': 'k', 'Қ': 'Q', 'қ': 'q',\n        'Л': 'L', 'л': 'l', 'М': 'M', 'м': 'm', 'Н': 'N', 'н': 'n', 'Ң': 'Ń', 'ң': 'ń', 'О': 'O', 'о': 'o',\n        'Ө': 'Ö', 'ө': 'ö', 'П': 'P', 'п': 'p', 'Р': 'R', 'р': 'r', 'С': 'S', 'с': 's', 'Т': 'T','т':'t',\n        'У':'U','у':'u','Ұ':'Ú','ұ':'ú','Ү':' ü','ү':'ü','Ф':'F','ф':'f','Х':'H','х':'h','Һ':'H','һ':'h',\n        'Ц':'Ts','ц':'ts','Ч':'Ch','ч':'ch','Ш':'Sh','ш':'sh','Щ':'Shch','щ':'shch','ъ':',','Ы':'Y','ы':'y',\n        'ь':\"'\",'Э':'E','э':'e','Ю':'Yu','ю':'yu','Я':'Ya','я':'ya'}   ",
+        "detail": "prak6.zadanie5",
+        "documentation": {}
     }
 ]
