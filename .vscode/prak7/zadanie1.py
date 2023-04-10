@@ -1,4 +1,3 @@
-# Казахстанға қосымша ен-өзен тізімін жасаймыз
 countries_and_rivers = {
     'Қазақстан': ['Ертіс', 'Іртіш', 'Шу', 'Тобыл', 'Қарағанды'],
     'Россия': ['Волга', 'Дон', 'Обь'],
@@ -7,22 +6,22 @@ countries_and_rivers = {
     'Китай': ['Янцзы', 'Хуанхэ', 'Гань'],
     'Бразилия': ['Амазонка', 'Парана', 'Сан-Франсиску'],
 }
+def ozen_out():
+    print('Ел мен өзендер тізімі:')
+    for country, rivers in countries_and_rivers.items():
+        for river in rivers:
+            print(f'{river} : {country}')
 
-# Ен-өзен тізімін көрсетеміз
-print('Ел мен өзендер тізімі:')
-for country, rivers in countries_and_rivers.items():
-    print(country + ':', ', '.join(rivers))
-
-# 1) Әр бір өзен үшін ол қай елде тече мүмкіндігін көрсетеміз
-print('\nӨзендердің ағатын елдері:')
+def el(river):
+    for country, rivers in countries_and_rivers.items():
+        if river in rivers:
+            return (f'{river} — {country}')
+            break
+    else:
+        return(f'{river} — табылмады')
+ozen_out()
 i=0
 while i<5:
     river=input("Өзен аты:") 
-    for country, rivers in countries_and_rivers.items():
-        if river in rivers:
-            print(f'{river} — {country}')
-            break
-    else:
-        print(f'{river} — табылмады')
+    print(el(river))
 
-# 2) Тізімде көрсетілген өзеннің атауы таңдалған өзендердің тізімінде бар немесе жо

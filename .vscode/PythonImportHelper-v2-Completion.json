@@ -9,12 +9,65 @@
         "documentation": {}
     },
     {
+        "label": "string",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "string",
+        "description": "string",
+        "detail": "string",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "reduce",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "ozen_out",
+        "kind": 2,
+        "importPath": ".vscode.prak7.zadanie1",
+        "description": ".vscode.prak7.zadanie1",
+        "peekOfCode": "def ozen_out():\n    print('Ел мен өзендер тізімі:')\n    for country, rivers in countries_and_rivers.items():\n        for river in rivers:\n            print(f'{river} : {country}')\ndef el(river):\n    for country, rivers in countries_and_rivers.items():\n        if river in rivers:\n            return (f'{river} — {country}')\n            break",
+        "detail": ".vscode.prak7.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "el",
+        "kind": 2,
+        "importPath": ".vscode.prak7.zadanie1",
+        "description": ".vscode.prak7.zadanie1",
+        "peekOfCode": "def el(river):\n    for country, rivers in countries_and_rivers.items():\n        if river in rivers:\n            return (f'{river} — {country}')\n            break\n    else:\n        return(f'{river} — табылмады')\nozen_out()\ni=0\nwhile i<5:",
+        "detail": ".vscode.prak7.zadanie1",
+        "documentation": {}
+    },
+    {
         "label": "countries_and_rivers",
         "kind": 5,
         "importPath": ".vscode.prak7.zadanie1",
         "description": ".vscode.prak7.zadanie1",
-        "peekOfCode": "countries_and_rivers = {\n    'Қазақстан': ['Ертіс', 'Іртіш', 'Шу', 'Тобыл', 'Қарағанды'],\n    'Россия': ['Волга', 'Дон', 'Обь'],\n    'Канада': ['Святой Лаврентий', 'Маккензи'],\n    'США': ['Миссисипи', 'Колорадо', 'Колумбия'],\n    'Китай': ['Янцзы', 'Хуанхэ', 'Гань'],\n    'Бразилия': ['Амазонка', 'Парана', 'Сан-Франсиску'],\n}\n# Ен-өзен тізімін көрсетеміз\nprint('Ел мен өзендер тізімі:')",
+        "peekOfCode": "countries_and_rivers = {\n    'Қазақстан': ['Ертіс', 'Іртіш', 'Шу', 'Тобыл', 'Қарағанды'],\n    'Россия': ['Волга', 'Дон', 'Обь'],\n    'Канада': ['Святой Лаврентий', 'Маккензи'],\n    'США': ['Миссисипи', 'Колорадо', 'Колумбия'],\n    'Китай': ['Янцзы', 'Хуанхэ', 'Гань'],\n    'Бразилия': ['Амазонка', 'Парана', 'Сан-Франсиску'],\n}\ndef ozen_out():\n    print('Ел мен өзендер тізімі:')",
         "detail": ".vscode.prak7.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "com_add",
+        "kind": 2,
+        "importPath": ".vscode.prak7.zadanie2",
+        "description": ".vscode.prak7.zadanie2",
+        "peekOfCode": "def com_add():\n    while True:\n        comment = input() \n        if not comment: \n            break\n        name, text = comment.split(':')  \n        commentators.add(name.strip())\ncom_add()\nprint(f'Бірегей комментатор саны: {len(commentators)}')",
+        "detail": ".vscode.prak7.zadanie2",
         "documentation": {}
     },
     {
@@ -22,16 +75,25 @@
         "kind": 5,
         "importPath": ".vscode.prak7.zadanie2",
         "description": ".vscode.prak7.zadanie2",
-        "peekOfCode": "commentators = set() \nwhile True:\n    comment = input() \n    if not comment: \n        break\n    name, text = comment.split(':')  \n    commentators.add(name.strip())\nprint(f'Бірегей комментатор саны: {len(commentators)}')",
+        "peekOfCode": "commentators = set() \ndef com_add():\n    while True:\n        comment = input() \n        if not comment: \n            break\n        name, text = comment.split(':')  \n        commentators.add(name.strip())\ncom_add()\nprint(f'Бірегей комментатор саны: {len(commentators)}')",
         "detail": ".vscode.prak7.zadanie2",
         "documentation": {}
     },
     {
-        "label": "n",
-        "kind": 5,
+        "label": "add_contact",
+        "kind": 2,
         "importPath": ".vscode.prak7.zadanie3",
         "description": ".vscode.prak7.zadanie3",
-        "peekOfCode": "n = int(input()) \nphone_book = {}  \nfor i in range(n):\n    phone, name = input().split()  \n    phone_book[name] = phone \nquery = input()  \nif query in phone_book :\n    print(phone_book[query]) \nelse:\n    print('Телефонкітапшасында жоқ')  ",
+        "peekOfCode": "def add_contact():\n    n = int(input()) \n    for i in range(n):\n        phone, name = input().split()  \n        phone_book[name] = phone \ndef search(query):\n    if query in phone_book :\n        print(phone_book[query]) \n    else:\n        print('Телефон кітапшасында жоқ')  ",
+        "detail": ".vscode.prak7.zadanie3",
+        "documentation": {}
+    },
+    {
+        "label": "search",
+        "kind": 2,
+        "importPath": ".vscode.prak7.zadanie3",
+        "description": ".vscode.prak7.zadanie3",
+        "peekOfCode": "def search(query):\n    if query in phone_book :\n        print(phone_book[query]) \n    else:\n        print('Телефон кітапшасында жоқ')  \n        print('Қосу?иа/жоқ')\n        query = input()  \n        jauap=input()\n        if jauap=='иа':\n            phone_book[query]=input(\"номер:\")",
         "detail": ".vscode.prak7.zadanie3",
         "documentation": {}
     },
@@ -40,25 +102,25 @@
         "kind": 5,
         "importPath": ".vscode.prak7.zadanie3",
         "description": ".vscode.prak7.zadanie3",
-        "peekOfCode": "phone_book = {}  \nfor i in range(n):\n    phone, name = input().split()  \n    phone_book[name] = phone \nquery = input()  \nif query in phone_book :\n    print(phone_book[query]) \nelse:\n    print('Телефонкітапшасында жоқ')  \nprint('Қосу?иа/жоқ')",
+        "peekOfCode": "phone_book = {}  \ndef add_contact():\n    n = int(input()) \n    for i in range(n):\n        phone, name = input().split()  \n        phone_book[name] = phone \ndef search(query):\n    if query in phone_book :\n        print(phone_book[query]) \n    else:",
         "detail": ".vscode.prak7.zadanie3",
         "documentation": {}
     },
     {
-        "label": "query",
-        "kind": 5,
-        "importPath": ".vscode.prak7.zadanie3",
-        "description": ".vscode.prak7.zadanie3",
-        "peekOfCode": "query = input()  \nif query in phone_book :\n    print(phone_book[query]) \nelse:\n    print('Телефонкітапшасында жоқ')  \nprint('Қосу?иа/жоқ')\njauap=input()\nif jauap=='иа':\n    phone_book[query]=input(\"номер:\")\nfor name, phone in phone_book.items():",
-        "detail": ".vscode.prak7.zadanie3",
-        "documentation": {}
-    },
-    {
-        "label": "n",
-        "kind": 5,
+        "label": "add_otpusk",
+        "kind": 2,
         "importPath": ".vscode.prak7.zadanie4",
         "description": ".vscode.prak7.zadanie4",
-        "peekOfCode": "n = int(input()) \nvacation_schedule = {} \nfor i in range(n):\n    name, day, month = input().split()\n    if name not in vacation_schedule:\n        vacation_schedule[name] = []\n    vacation_schedule[name].append(month)\nquery_month = input()\nresult = []\nfor name, months in vacation_schedule.items():",
+        "peekOfCode": "def add_otpusk():\n    n = int(input()) \n    for i in range(n):\n        name, day, month = input().split()\n        if name not in vacation_schedule:\n            vacation_schedule[name] = []\n        vacation_schedule[name].append(month)\nadd_otpusk()\nquery_month = input()\ndef search(query_month):",
+        "detail": ".vscode.prak7.zadanie4",
+        "documentation": {}
+    },
+    {
+        "label": "search",
+        "kind": 2,
+        "importPath": ".vscode.prak7.zadanie4",
+        "description": ".vscode.prak7.zadanie4",
+        "peekOfCode": "def search(query_month):\n    result = []\n    for name, months in vacation_schedule.items():\n        if query_month in months:\n            result.append(name)\n    return result\nresult=search(query_month)\nif result:\n    print(*result)\nelse:",
         "detail": ".vscode.prak7.zadanie4",
         "documentation": {}
     },
@@ -67,7 +129,7 @@
         "kind": 5,
         "importPath": ".vscode.prak7.zadanie4",
         "description": ".vscode.prak7.zadanie4",
-        "peekOfCode": "vacation_schedule = {} \nfor i in range(n):\n    name, day, month = input().split()\n    if name not in vacation_schedule:\n        vacation_schedule[name] = []\n    vacation_schedule[name].append(month)\nquery_month = input()\nresult = []\nfor name, months in vacation_schedule.items():\n    if query_month in months:",
+        "peekOfCode": "vacation_schedule = {} \ndef add_otpusk():\n    n = int(input()) \n    for i in range(n):\n        name, day, month = input().split()\n        if name not in vacation_schedule:\n            vacation_schedule[name] = []\n        vacation_schedule[name].append(month)\nadd_otpusk()\nquery_month = input()",
         "detail": ".vscode.prak7.zadanie4",
         "documentation": {}
     },
@@ -76,17 +138,341 @@
         "kind": 5,
         "importPath": ".vscode.prak7.zadanie4",
         "description": ".vscode.prak7.zadanie4",
-        "peekOfCode": "query_month = input()\nresult = []\nfor name, months in vacation_schedule.items():\n    if query_month in months:\n        result.append(name)\nif result:\n    print(*result)\nelse:\n    print(\"Никто не идет в отпуск в указанный месяц\")",
+        "peekOfCode": "query_month = input()\ndef search(query_month):\n    result = []\n    for name, months in vacation_schedule.items():\n        if query_month in months:\n            result.append(name)\n    return result\nresult=search(query_month)\nif result:\n    print(*result)",
         "detail": ".vscode.prak7.zadanie4",
         "documentation": {}
     },
     {
-        "label": "result",
+        "label": "generate_random_string",
+        "kind": 2,
+        "importPath": "prak10.zadanie1",
+        "description": "prak10.zadanie1",
+        "peekOfCode": "def generate_random_string(length):\n    return ''.join(random.choices(string.ascii_lowercase, k=length))\ndef capitalize_string(string):\n    return string.capitalize()\ndef reverse_string(string):\n    return string[::-1]\ndef count_occurrences(string, substring):\n    return string.count(substring)\ndef square_root(number):\n    return math.sqrt(number)",
+        "detail": "prak10.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "capitalize_string",
+        "kind": 2,
+        "importPath": "prak10.zadanie1",
+        "description": "prak10.zadanie1",
+        "peekOfCode": "def capitalize_string(string):\n    return string.capitalize()\ndef reverse_string(string):\n    return string[::-1]\ndef count_occurrences(string, substring):\n    return string.count(substring)\ndef square_root(number):\n    return math.sqrt(number)\ndef absolute_value(number):\n    return abs(number)",
+        "detail": "prak10.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "reverse_string",
+        "kind": 2,
+        "importPath": "prak10.zadanie1",
+        "description": "prak10.zadanie1",
+        "peekOfCode": "def reverse_string(string):\n    return string[::-1]\ndef count_occurrences(string, substring):\n    return string.count(substring)\ndef square_root(number):\n    return math.sqrt(number)\ndef absolute_value(number):\n    return abs(number)\ndef is_even(number):\n    return number % 2 == 0",
+        "detail": "prak10.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "count_occurrences",
+        "kind": 2,
+        "importPath": "prak10.zadanie1",
+        "description": "prak10.zadanie1",
+        "peekOfCode": "def count_occurrences(string, substring):\n    return string.count(substring)\ndef square_root(number):\n    return math.sqrt(number)\ndef absolute_value(number):\n    return abs(number)\ndef is_even(number):\n    return number % 2 == 0\ndef is_alpha(string):\n    return string.isalpha()",
+        "detail": "prak10.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "square_root",
+        "kind": 2,
+        "importPath": "prak10.zadanie1",
+        "description": "prak10.zadanie1",
+        "peekOfCode": "def square_root(number):\n    return math.sqrt(number)\ndef absolute_value(number):\n    return abs(number)\ndef is_even(number):\n    return number % 2 == 0\ndef is_alpha(string):\n    return string.isalpha()\ndef sort_list(list):\n    return sorted(list)",
+        "detail": "prak10.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "absolute_value",
+        "kind": 2,
+        "importPath": "prak10.zadanie1",
+        "description": "prak10.zadanie1",
+        "peekOfCode": "def absolute_value(number):\n    return abs(number)\ndef is_even(number):\n    return number % 2 == 0\ndef is_alpha(string):\n    return string.isalpha()\ndef sort_list(list):\n    return sorted(list)\ndef sum_list(list):\n    return sum(list)",
+        "detail": "prak10.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "is_even",
+        "kind": 2,
+        "importPath": "prak10.zadanie1",
+        "description": "prak10.zadanie1",
+        "peekOfCode": "def is_even(number):\n    return number % 2 == 0\ndef is_alpha(string):\n    return string.isalpha()\ndef sort_list(list):\n    return sorted(list)\ndef sum_list(list):\n    return sum(list)\nrandom_string = generate_random_string(10)\ncapitalized_string = capitalize_string(random_string)",
+        "detail": "prak10.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "is_alpha",
+        "kind": 2,
+        "importPath": "prak10.zadanie1",
+        "description": "prak10.zadanie1",
+        "peekOfCode": "def is_alpha(string):\n    return string.isalpha()\ndef sort_list(list):\n    return sorted(list)\ndef sum_list(list):\n    return sum(list)\nrandom_string = generate_random_string(10)\ncapitalized_string = capitalize_string(random_string)\nreversed_string = reverse_string(capitalized_string)\noccurrences = count_occurrences(reversed_string+\"AAA\", 'A')",
+        "detail": "prak10.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "sort_list",
+        "kind": 2,
+        "importPath": "prak10.zadanie1",
+        "description": "prak10.zadanie1",
+        "peekOfCode": "def sort_list(list):\n    return sorted(list)\ndef sum_list(list):\n    return sum(list)\nrandom_string = generate_random_string(10)\ncapitalized_string = capitalize_string(random_string)\nreversed_string = reverse_string(capitalized_string)\noccurrences = count_occurrences(reversed_string+\"AAA\", 'A')\nsquare_root_value = square_root(occurrences)\nabsolute_value_number = absolute_value(square_root_value)",
+        "detail": "prak10.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "sum_list",
+        "kind": 2,
+        "importPath": "prak10.zadanie1",
+        "description": "prak10.zadanie1",
+        "peekOfCode": "def sum_list(list):\n    return sum(list)\nrandom_string = generate_random_string(10)\ncapitalized_string = capitalize_string(random_string)\nreversed_string = reverse_string(capitalized_string)\noccurrences = count_occurrences(reversed_string+\"AAA\", 'A')\nsquare_root_value = square_root(occurrences)\nabsolute_value_number = absolute_value(square_root_value)\nis_even_boolean = is_even(absolute_value_number)\nlist_of_numbers = [2, 4, 6, 8, 10]",
+        "detail": "prak10.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "random_string",
         "kind": 5,
-        "importPath": ".vscode.prak7.zadanie4",
-        "description": ".vscode.prak7.zadanie4",
-        "peekOfCode": "result = []\nfor name, months in vacation_schedule.items():\n    if query_month in months:\n        result.append(name)\nif result:\n    print(*result)\nelse:\n    print(\"Никто не идет в отпуск в указанный месяц\")",
-        "detail": ".vscode.prak7.zadanie4",
+        "importPath": "prak10.zadanie1",
+        "description": "prak10.zadanie1",
+        "peekOfCode": "random_string = generate_random_string(10)\ncapitalized_string = capitalize_string(random_string)\nreversed_string = reverse_string(capitalized_string)\noccurrences = count_occurrences(reversed_string+\"AAA\", 'A')\nsquare_root_value = square_root(occurrences)\nabsolute_value_number = absolute_value(square_root_value)\nis_even_boolean = is_even(absolute_value_number)\nlist_of_numbers = [2, 4, 6, 8, 10]\nsorted_list = sort_list(list_of_numbers)\nsum_of_numbers = sum_list(sorted_list)",
+        "detail": "prak10.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "capitalized_string",
+        "kind": 5,
+        "importPath": "prak10.zadanie1",
+        "description": "prak10.zadanie1",
+        "peekOfCode": "capitalized_string = capitalize_string(random_string)\nreversed_string = reverse_string(capitalized_string)\noccurrences = count_occurrences(reversed_string+\"AAA\", 'A')\nsquare_root_value = square_root(occurrences)\nabsolute_value_number = absolute_value(square_root_value)\nis_even_boolean = is_even(absolute_value_number)\nlist_of_numbers = [2, 4, 6, 8, 10]\nsorted_list = sort_list(list_of_numbers)\nsum_of_numbers = sum_list(sorted_list)\nprint(f\"Random string: {random_string}\")",
+        "detail": "prak10.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "reversed_string",
+        "kind": 5,
+        "importPath": "prak10.zadanie1",
+        "description": "prak10.zadanie1",
+        "peekOfCode": "reversed_string = reverse_string(capitalized_string)\noccurrences = count_occurrences(reversed_string+\"AAA\", 'A')\nsquare_root_value = square_root(occurrences)\nabsolute_value_number = absolute_value(square_root_value)\nis_even_boolean = is_even(absolute_value_number)\nlist_of_numbers = [2, 4, 6, 8, 10]\nsorted_list = sort_list(list_of_numbers)\nsum_of_numbers = sum_list(sorted_list)\nprint(f\"Random string: {random_string}\")\nprint(f\"Capitalized string: {capitalized_string}\")",
+        "detail": "prak10.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "occurrences",
+        "kind": 5,
+        "importPath": "prak10.zadanie1",
+        "description": "prak10.zadanie1",
+        "peekOfCode": "occurrences = count_occurrences(reversed_string+\"AAA\", 'A')\nsquare_root_value = square_root(occurrences)\nabsolute_value_number = absolute_value(square_root_value)\nis_even_boolean = is_even(absolute_value_number)\nlist_of_numbers = [2, 4, 6, 8, 10]\nsorted_list = sort_list(list_of_numbers)\nsum_of_numbers = sum_list(sorted_list)\nprint(f\"Random string: {random_string}\")\nprint(f\"Capitalized string: {capitalized_string}\")\nprint(f\"Reversed string: {reversed_string}\")",
+        "detail": "prak10.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "square_root_value",
+        "kind": 5,
+        "importPath": "prak10.zadanie1",
+        "description": "prak10.zadanie1",
+        "peekOfCode": "square_root_value = square_root(occurrences)\nabsolute_value_number = absolute_value(square_root_value)\nis_even_boolean = is_even(absolute_value_number)\nlist_of_numbers = [2, 4, 6, 8, 10]\nsorted_list = sort_list(list_of_numbers)\nsum_of_numbers = sum_list(sorted_list)\nprint(f\"Random string: {random_string}\")\nprint(f\"Capitalized string: {capitalized_string}\")\nprint(f\"Reversed string: {reversed_string}\")\nprint(f\"Occurrences of 'A': {occurrences}\")",
+        "detail": "prak10.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "absolute_value_number",
+        "kind": 5,
+        "importPath": "prak10.zadanie1",
+        "description": "prak10.zadanie1",
+        "peekOfCode": "absolute_value_number = absolute_value(square_root_value)\nis_even_boolean = is_even(absolute_value_number)\nlist_of_numbers = [2, 4, 6, 8, 10]\nsorted_list = sort_list(list_of_numbers)\nsum_of_numbers = sum_list(sorted_list)\nprint(f\"Random string: {random_string}\")\nprint(f\"Capitalized string: {capitalized_string}\")\nprint(f\"Reversed string: {reversed_string}\")\nprint(f\"Occurrences of 'A': {occurrences}\")\nprint(f\"Square root: {square_root_value}\")",
+        "detail": "prak10.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "is_even_boolean",
+        "kind": 5,
+        "importPath": "prak10.zadanie1",
+        "description": "prak10.zadanie1",
+        "peekOfCode": "is_even_boolean = is_even(absolute_value_number)\nlist_of_numbers = [2, 4, 6, 8, 10]\nsorted_list = sort_list(list_of_numbers)\nsum_of_numbers = sum_list(sorted_list)\nprint(f\"Random string: {random_string}\")\nprint(f\"Capitalized string: {capitalized_string}\")\nprint(f\"Reversed string: {reversed_string}\")\nprint(f\"Occurrences of 'A': {occurrences}\")\nprint(f\"Square root: {square_root_value}\")\nprint(f\"Absolute value: {absolute_value_number}\")",
+        "detail": "prak10.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "list_of_numbers",
+        "kind": 5,
+        "importPath": "prak10.zadanie1",
+        "description": "prak10.zadanie1",
+        "peekOfCode": "list_of_numbers = [2, 4, 6, 8, 10]\nsorted_list = sort_list(list_of_numbers)\nsum_of_numbers = sum_list(sorted_list)\nprint(f\"Random string: {random_string}\")\nprint(f\"Capitalized string: {capitalized_string}\")\nprint(f\"Reversed string: {reversed_string}\")\nprint(f\"Occurrences of 'A': {occurrences}\")\nprint(f\"Square root: {square_root_value}\")\nprint(f\"Absolute value: {absolute_value_number}\")\nprint(f\"Is even: {is_even_boolean}\")",
+        "detail": "prak10.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "sorted_list",
+        "kind": 5,
+        "importPath": "prak10.zadanie1",
+        "description": "prak10.zadanie1",
+        "peekOfCode": "sorted_list = sort_list(list_of_numbers)\nsum_of_numbers = sum_list(sorted_list)\nprint(f\"Random string: {random_string}\")\nprint(f\"Capitalized string: {capitalized_string}\")\nprint(f\"Reversed string: {reversed_string}\")\nprint(f\"Occurrences of 'A': {occurrences}\")\nprint(f\"Square root: {square_root_value}\")\nprint(f\"Absolute value: {absolute_value_number}\")\nprint(f\"Is even: {is_even_boolean}\")\nprint(f\"Sorted list: {sorted_list}\")",
+        "detail": "prak10.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "sum_of_numbers",
+        "kind": 5,
+        "importPath": "prak10.zadanie1",
+        "description": "prak10.zadanie1",
+        "peekOfCode": "sum_of_numbers = sum_list(sorted_list)\nprint(f\"Random string: {random_string}\")\nprint(f\"Capitalized string: {capitalized_string}\")\nprint(f\"Reversed string: {reversed_string}\")\nprint(f\"Occurrences of 'A': {occurrences}\")\nprint(f\"Square root: {square_root_value}\")\nprint(f\"Absolute value: {absolute_value_number}\")\nprint(f\"Is even: {is_even_boolean}\")\nprint(f\"Sorted list: {sorted_list}\")\nprint(f\"Sum of numbers: {sum_of_numbers}\")",
+        "detail": "prak10.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "my_list",
+        "kind": 5,
+        "importPath": "prak10.zadanie2.2",
+        "description": "prak10.zadanie2.2",
+        "peekOfCode": "my_list = [2, 4, 7, 8, 10]\nprint(any(num % 3 == 0 for num in my_list))\nprint(all(num % 2 == 0 for num in my_list))",
+        "detail": "prak10.zadanie2.2",
+        "documentation": {}
+    },
+    {
+        "label": "rotate_matrix",
+        "kind": 2,
+        "importPath": "prak10.zadanie2.3",
+        "description": "prak10.zadanie2.3",
+        "peekOfCode": "def rotate_matrix(matrix):\n    return [list(row) for row in zip(*reversed(matrix))]\nmatrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]\nfor i in matrix:\n    print(i)\nprint()\nrotated_matrix = rotate_matrix(matrix)\nfor i in rotated_matrix:\n    print(i)",
+        "detail": "prak10.zadanie2.3",
+        "documentation": {}
+    },
+    {
+        "label": "matrix",
+        "kind": 5,
+        "importPath": "prak10.zadanie2.3",
+        "description": "prak10.zadanie2.3",
+        "peekOfCode": "matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]\nfor i in matrix:\n    print(i)\nprint()\nrotated_matrix = rotate_matrix(matrix)\nfor i in rotated_matrix:\n    print(i)",
+        "detail": "prak10.zadanie2.3",
+        "documentation": {}
+    },
+    {
+        "label": "rotated_matrix",
+        "kind": 5,
+        "importPath": "prak10.zadanie2.3",
+        "description": "prak10.zadanie2.3",
+        "peekOfCode": "rotated_matrix = rotate_matrix(matrix)\nfor i in rotated_matrix:\n    print(i)",
+        "detail": "prak10.zadanie2.3",
+        "documentation": {}
+    },
+    {
+        "label": "dynamic_progr",
+        "kind": 2,
+        "importPath": "prak10.zadanie2.4",
+        "description": "prak10.zadanie2.4",
+        "peekOfCode": "def dynamic_progr(ves, price, max_ves):\n    n = len(ves)\n    dp = [[0 for _ in range(max_ves + 1)] for _ in range(n + 1)]\n    for i in range(1, n + 1):\n        for j in range(1, max_ves + 1):\n            if ves[i-1] > j:\n                dp[i][j] = dp[i-1][j]\n            else:\n                dp[i][j] = max(dp[i-1][j], dp[i-1][j-ves[i-1]] + price[i-1])\n    return dp[n][max_ves]",
+        "detail": "prak10.zadanie2.4",
+        "documentation": {}
+    },
+    {
+        "label": "ves",
+        "kind": 5,
+        "importPath": "prak10.zadanie2.4",
+        "description": "prak10.zadanie2.4",
+        "peekOfCode": "ves = [2, 3, 4, 5]\nprice = [3, 4, 5, 6]\nmax_ves = 8\nmax_value = dynamic_progr(ves, price, max_ves)\nprint(max_value)",
+        "detail": "prak10.zadanie2.4",
+        "documentation": {}
+    },
+    {
+        "label": "price",
+        "kind": 5,
+        "importPath": "prak10.zadanie2.4",
+        "description": "prak10.zadanie2.4",
+        "peekOfCode": "price = [3, 4, 5, 6]\nmax_ves = 8\nmax_value = dynamic_progr(ves, price, max_ves)\nprint(max_value)",
+        "detail": "prak10.zadanie2.4",
+        "documentation": {}
+    },
+    {
+        "label": "max_ves",
+        "kind": 5,
+        "importPath": "prak10.zadanie2.4",
+        "description": "prak10.zadanie2.4",
+        "peekOfCode": "max_ves = 8\nmax_value = dynamic_progr(ves, price, max_ves)\nprint(max_value)",
+        "detail": "prak10.zadanie2.4",
+        "documentation": {}
+    },
+    {
+        "label": "max_value",
+        "kind": 5,
+        "importPath": "prak10.zadanie2.4",
+        "description": "prak10.zadanie2.4",
+        "peekOfCode": "max_value = dynamic_progr(ves, price, max_ves)\nprint(max_value)",
+        "detail": "prak10.zadanie2.4",
+        "documentation": {}
+    },
+    {
+        "label": "matrix_operation",
+        "kind": 2,
+        "importPath": "prak10.zadanie2.5",
+        "description": "prak10.zadanie2.5",
+        "peekOfCode": "def matrix_operation(matrix1, matrix2, operation):\n    \"\"\"\n    Выполняет операцию над двумя матрицами.\n    matrix1 - первая матрица.\n    matrix2 - вторая матрица.\n    operation - символ операции ('+', '-', '*').\n    \"\"\"\n    result = []\n    for i, row1 in enumerate(matrix1):\n        row_result = []",
+        "detail": "prak10.zadanie2.5",
+        "documentation": {}
+    },
+    {
+        "label": "matrix1",
+        "kind": 5,
+        "importPath": "prak10.zadanie2.5",
+        "description": "prak10.zadanie2.5",
+        "peekOfCode": "matrix1 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]\nmatrix2 = [[9, 8, 7], [6, 5, 4], [3, 2, 1]]\naddition_result = matrix_operation(matrix1, matrix2, '+')\nsubtraction_result = matrix_operation(matrix1, matrix2, '-')\nmultiplication_result = matrix_operation(matrix1, matrix2, '*')\nprint(\"Матрица 1 :\")\nfor row in matrix1:\n    print(row)\nprint(\"Матрица 2 :\")\nfor row in matrix2:",
+        "detail": "prak10.zadanie2.5",
+        "documentation": {}
+    },
+    {
+        "label": "matrix2",
+        "kind": 5,
+        "importPath": "prak10.zadanie2.5",
+        "description": "prak10.zadanie2.5",
+        "peekOfCode": "matrix2 = [[9, 8, 7], [6, 5, 4], [3, 2, 1]]\naddition_result = matrix_operation(matrix1, matrix2, '+')\nsubtraction_result = matrix_operation(matrix1, matrix2, '-')\nmultiplication_result = matrix_operation(matrix1, matrix2, '*')\nprint(\"Матрица 1 :\")\nfor row in matrix1:\n    print(row)\nprint(\"Матрица 2 :\")\nfor row in matrix2:\n    print(row)",
+        "detail": "prak10.zadanie2.5",
+        "documentation": {}
+    },
+    {
+        "label": "addition_result",
+        "kind": 5,
+        "importPath": "prak10.zadanie2.5",
+        "description": "prak10.zadanie2.5",
+        "peekOfCode": "addition_result = matrix_operation(matrix1, matrix2, '+')\nsubtraction_result = matrix_operation(matrix1, matrix2, '-')\nmultiplication_result = matrix_operation(matrix1, matrix2, '*')\nprint(\"Матрица 1 :\")\nfor row in matrix1:\n    print(row)\nprint(\"Матрица 2 :\")\nfor row in matrix2:\n    print(row)\nprint(\"Результат сложения:\")",
+        "detail": "prak10.zadanie2.5",
+        "documentation": {}
+    },
+    {
+        "label": "subtraction_result",
+        "kind": 5,
+        "importPath": "prak10.zadanie2.5",
+        "description": "prak10.zadanie2.5",
+        "peekOfCode": "subtraction_result = matrix_operation(matrix1, matrix2, '-')\nmultiplication_result = matrix_operation(matrix1, matrix2, '*')\nprint(\"Матрица 1 :\")\nfor row in matrix1:\n    print(row)\nprint(\"Матрица 2 :\")\nfor row in matrix2:\n    print(row)\nprint(\"Результат сложения:\")\nfor row in addition_result:",
+        "detail": "prak10.zadanie2.5",
+        "documentation": {}
+    },
+    {
+        "label": "multiplication_result",
+        "kind": 5,
+        "importPath": "prak10.zadanie2.5",
+        "description": "prak10.zadanie2.5",
+        "peekOfCode": "multiplication_result = matrix_operation(matrix1, matrix2, '*')\nprint(\"Матрица 1 :\")\nfor row in matrix1:\n    print(row)\nprint(\"Матрица 2 :\")\nfor row in matrix2:\n    print(row)\nprint(\"Результат сложения:\")\nfor row in addition_result:\n    print(row)",
+        "detail": "prak10.zadanie2.5",
+        "documentation": {}
+    },
+    {
+        "label": "string",
+        "kind": 5,
+        "importPath": "prak10.zadanie2",
+        "description": "prak10.zadanie2",
+        "peekOfCode": "string = input(\"Введите строку: \")\nunique_chars = []\nfor char in string:\n    if char not in unique_chars:\n        unique_chars.append(char)\nunique_chars.sort()\nprint(\"Уникальные символы в строке:\")\nfor char in unique_chars:\n    print(char, end=\" \")",
+        "detail": "prak10.zadanie2",
+        "documentation": {}
+    },
+    {
+        "label": "unique_chars",
+        "kind": 5,
+        "importPath": "prak10.zadanie2",
+        "description": "prak10.zadanie2",
+        "peekOfCode": "unique_chars = []\nfor char in string:\n    if char not in unique_chars:\n        unique_chars.append(char)\nunique_chars.sort()\nprint(\"Уникальные символы в строке:\")\nfor char in unique_chars:\n    print(char, end=\" \")",
+        "detail": "prak10.zadanie2",
         "documentation": {}
     },
     {
@@ -276,6 +662,267 @@
         "description": "prak6.zadanie5",
         "peekOfCode": "def kazakh_to_latin(text):\n    kazakh_latin_table = {\n        'А': 'A', 'а': 'a', 'Ә': 'Á', 'ә': 'á', 'Б': 'B', 'б': 'b', 'В': 'V', 'в': 'v', 'Г': 'G', 'г': 'g',\n        'Ғ': 'Ğ', 'ғ': 'ğ', 'Д': 'D', 'д': 'd', 'Е': 'E', 'е': 'e', 'Ё': 'Yo', 'ё': 'yo', 'Ж': 'J', 'ж': 'j',\n        'З': 'Z', 'з': 'z', 'И': 'I', 'и': 'i', 'Й': 'Ý', 'й': 'ý', 'К': 'K', 'к': 'k', 'Қ': 'Q', 'қ': 'q',\n        'Л': 'L', 'л': 'l', 'М': 'M', 'м': 'm', 'Н': 'N', 'н': 'n', 'Ң': 'Ń', 'ң': 'ń', 'О': 'O', 'о': 'o',\n        'Ө': 'Ö', 'ө': 'ö', 'П': 'P', 'п': 'p', 'Р': 'R', 'р': 'r', 'С': 'S', 'с': 's', 'Т': 'T','т':'t',\n        'У':'U','у':'u','Ұ':'Ú','ұ':'ú','Ү':' ü','ү':'ü','Ф':'F','ф':'f','Х':'H','х':'h','Һ':'H','һ':'h',\n        'Ц':'Ts','ц':'ts','Ч':'Ch','ч':'ch','Ш':'Sh','ш':'sh','Щ':'Shch','щ':'shch','ъ':',','Ы':'Y','ы':'y',\n        'ь':\"'\",'Э':'E','э':'e','Ю':'Yu','ю':'yu','Я':'Ya','я':'ya'}   ",
         "detail": "prak6.zadanie5",
+        "documentation": {}
+    },
+    {
+        "label": "Job",
+        "kind": 6,
+        "importPath": "prak9.zadanie1",
+        "description": "prak9.zadanie1",
+        "peekOfCode": "class Job:\n    def __init__(self, title, duration):\n        self.title = title\n        self.duration = duration\nclass Resume:\n    def __init__(self, name, email, jobs):\n        self.name = name\n        self.email = email\n        self.jobs = jobs\n#func",
+        "detail": "prak9.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "Resume",
+        "kind": 6,
+        "importPath": "prak9.zadanie1",
+        "description": "prak9.zadanie1",
+        "peekOfCode": "class Resume:\n    def __init__(self, name, email, jobs):\n        self.name = name\n        self.email = email\n        self.jobs = jobs\n#func\ndef calculate_experience(resume):\n    experience = 0\n    for job in resume:\n        experience += job.duration",
+        "detail": "prak9.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_experience",
+        "kind": 2,
+        "importPath": "prak9.zadanie1",
+        "description": "prak9.zadanie1",
+        "peekOfCode": "def calculate_experience(resume):\n    experience = 0\n    for job in resume:\n        experience += job.duration\n    return experience\n#no func\ndef print_resume(resume):\n    print(\"Name:\", resume.name)\n    print(\"Email:\", resume.email)\n    print(\"Experience:\", calculate_experience(resume.jobs))",
+        "detail": "prak9.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "print_resume",
+        "kind": 2,
+        "importPath": "prak9.zadanie1",
+        "description": "prak9.zadanie1",
+        "peekOfCode": "def print_resume(resume):\n    print(\"Name:\", resume.name)\n    print(\"Email:\", resume.email)\n    print(\"Experience:\", calculate_experience(resume.jobs))\n    for job in resume.jobs:\n        print(job.title, job.duration)\njobs = [Job(\"Developer\", 2), Job(\"Manager\", 3)]\nresume = Resume(\"John Doe\", \"john.doe@example.com\", jobs)\nprint_resume(resume)",
+        "detail": "prak9.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "jobs",
+        "kind": 5,
+        "importPath": "prak9.zadanie1",
+        "description": "prak9.zadanie1",
+        "peekOfCode": "jobs = [Job(\"Developer\", 2), Job(\"Manager\", 3)]\nresume = Resume(\"John Doe\", \"john.doe@example.com\", jobs)\nprint_resume(resume)",
+        "detail": "prak9.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "resume",
+        "kind": 5,
+        "importPath": "prak9.zadanie1",
+        "description": "prak9.zadanie1",
+        "peekOfCode": "resume = Resume(\"John Doe\", \"john.doe@example.com\", jobs)\nprint_resume(resume)",
+        "detail": "prak9.zadanie1",
+        "documentation": {}
+    },
+    {
+        "label": "list_tuple_dict",
+        "kind": 2,
+        "importPath": "prak9.zadanie2",
+        "description": "prak9.zadanie2",
+        "peekOfCode": "def list_tuple_dict(name, age, city):\n    data_list = [name, age, city]\n    data_tuple = (name, age, city)\n    data_dict = {'name': name, 'age': age, 'city': city}\n    return data_list, data_tuple, data_dict\nresult_list, result_tuple, result_dict = list_tuple_dict(\"Alice\", 25, \"New York\")\nprint(result_list)  \nprint(result_tuple)  \nprint(result_dict)",
+        "detail": "prak9.zadanie2",
+        "documentation": {}
+    },
+    {
+        "label": "square",
+        "kind": 2,
+        "importPath": "prak9.zadanie3",
+        "description": "prak9.zadanie3",
+        "peekOfCode": "def square(x):\n    return x * x\nsquared_numbers = list(map(square, numbers))\nprint(squared_numbers) \n##filter\ndef is_even(x):\n    return x % 2 == 0\neven_numbers = list(filter(is_even, numbers))\nprint(even_numbers) \n##reduce",
+        "detail": "prak9.zadanie3",
+        "documentation": {}
+    },
+    {
+        "label": "is_even",
+        "kind": 2,
+        "importPath": "prak9.zadanie3",
+        "description": "prak9.zadanie3",
+        "peekOfCode": "def is_even(x):\n    return x % 2 == 0\neven_numbers = list(filter(is_even, numbers))\nprint(even_numbers) \n##reduce\nfrom functools import reduce\ndef multiply(x, y):\n    return x * y\nproduct = reduce(multiply, numbers)\nprint(product)",
+        "detail": "prak9.zadanie3",
+        "documentation": {}
+    },
+    {
+        "label": "multiply",
+        "kind": 2,
+        "importPath": "prak9.zadanie3",
+        "description": "prak9.zadanie3",
+        "peekOfCode": "def multiply(x, y):\n    return x * y\nproduct = reduce(multiply, numbers)\nprint(product)",
+        "detail": "prak9.zadanie3",
+        "documentation": {}
+    },
+    {
+        "label": "numbers",
+        "kind": 5,
+        "importPath": "prak9.zadanie3",
+        "description": "prak9.zadanie3",
+        "peekOfCode": "numbers = [1, 2, 3, 4, 5]\n##map\ndef square(x):\n    return x * x\nsquared_numbers = list(map(square, numbers))\nprint(squared_numbers) \n##filter\ndef is_even(x):\n    return x % 2 == 0\neven_numbers = list(filter(is_even, numbers))",
+        "detail": "prak9.zadanie3",
+        "documentation": {}
+    },
+    {
+        "label": "squared_numbers",
+        "kind": 5,
+        "importPath": "prak9.zadanie3",
+        "description": "prak9.zadanie3",
+        "peekOfCode": "squared_numbers = list(map(square, numbers))\nprint(squared_numbers) \n##filter\ndef is_even(x):\n    return x % 2 == 0\neven_numbers = list(filter(is_even, numbers))\nprint(even_numbers) \n##reduce\nfrom functools import reduce\ndef multiply(x, y):",
+        "detail": "prak9.zadanie3",
+        "documentation": {}
+    },
+    {
+        "label": "even_numbers",
+        "kind": 5,
+        "importPath": "prak9.zadanie3",
+        "description": "prak9.zadanie3",
+        "peekOfCode": "even_numbers = list(filter(is_even, numbers))\nprint(even_numbers) \n##reduce\nfrom functools import reduce\ndef multiply(x, y):\n    return x * y\nproduct = reduce(multiply, numbers)\nprint(product)",
+        "detail": "prak9.zadanie3",
+        "documentation": {}
+    },
+    {
+        "label": "product",
+        "kind": 5,
+        "importPath": "prak9.zadanie3",
+        "description": "prak9.zadanie3",
+        "peekOfCode": "product = reduce(multiply, numbers)\nprint(product)",
+        "detail": "prak9.zadanie3",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_delivery_cost",
+        "kind": 2,
+        "importPath": "prak9.zadanie4",
+        "description": "prak9.zadanie4",
+        "peekOfCode": "def calculate_delivery_cost(street_name, product_price):\n    if \"Аль-Фараби\" in street_name or \"Саина\" in street_name or \"Ташенова\" in street_name or \"Достык\" in street_name:\n        if product_price < 10000:\n            return 500\n        else:\n            return 0\n    else:\n        if product_price < 10000:\n            return 1000\n        else:",
+        "detail": "prak9.zadanie4",
+        "documentation": {}
+    },
+    {
+        "label": "street_name",
+        "kind": 5,
+        "importPath": "prak9.zadanie4",
+        "description": "prak9.zadanie4",
+        "peekOfCode": "street_name = \"Аль-Фараби-Саина-Ташенова-Достык\"\nproduct_price = 8000\ndelivery_cost = calculate_delivery_cost(street_name, product_price)\nprint(delivery_cost) \nstreet_name = input()\nproduct_price = int(input())\ndelivery_cost = calculate_delivery_cost(street_name, product_price)\nprint(delivery_cost)",
+        "detail": "prak9.zadanie4",
+        "documentation": {}
+    },
+    {
+        "label": "product_price",
+        "kind": 5,
+        "importPath": "prak9.zadanie4",
+        "description": "prak9.zadanie4",
+        "peekOfCode": "product_price = 8000\ndelivery_cost = calculate_delivery_cost(street_name, product_price)\nprint(delivery_cost) \nstreet_name = input()\nproduct_price = int(input())\ndelivery_cost = calculate_delivery_cost(street_name, product_price)\nprint(delivery_cost)",
+        "detail": "prak9.zadanie4",
+        "documentation": {}
+    },
+    {
+        "label": "delivery_cost",
+        "kind": 5,
+        "importPath": "prak9.zadanie4",
+        "description": "prak9.zadanie4",
+        "peekOfCode": "delivery_cost = calculate_delivery_cost(street_name, product_price)\nprint(delivery_cost) \nstreet_name = input()\nproduct_price = int(input())\ndelivery_cost = calculate_delivery_cost(street_name, product_price)\nprint(delivery_cost)",
+        "detail": "prak9.zadanie4",
+        "documentation": {}
+    },
+    {
+        "label": "street_name",
+        "kind": 5,
+        "importPath": "prak9.zadanie4",
+        "description": "prak9.zadanie4",
+        "peekOfCode": "street_name = input()\nproduct_price = int(input())\ndelivery_cost = calculate_delivery_cost(street_name, product_price)\nprint(delivery_cost)",
+        "detail": "prak9.zadanie4",
+        "documentation": {}
+    },
+    {
+        "label": "product_price",
+        "kind": 5,
+        "importPath": "prak9.zadanie4",
+        "description": "prak9.zadanie4",
+        "peekOfCode": "product_price = int(input())\ndelivery_cost = calculate_delivery_cost(street_name, product_price)\nprint(delivery_cost)",
+        "detail": "prak9.zadanie4",
+        "documentation": {}
+    },
+    {
+        "label": "delivery_cost",
+        "kind": 5,
+        "importPath": "prak9.zadanie4",
+        "description": "prak9.zadanie4",
+        "peekOfCode": "delivery_cost = calculate_delivery_cost(street_name, product_price)\nprint(delivery_cost)",
+        "detail": "prak9.zadanie4",
+        "documentation": {}
+    },
+    {
+        "label": "compose",
+        "kind": 2,
+        "importPath": "prak9.zadanie5",
+        "description": "prak9.zadanie5",
+        "peekOfCode": "def compose(f, g):\n    def h(x):\n        return f(g(x))\n    return h\nf_str = input('lambda x: x')\ng_str = input('lambda x: x')\nf = eval(f_str)\ng = eval(g_str)\ncomposed_function = compose(f, g)\nx = float(input(\"Введите значение x: \"))",
+        "detail": "prak9.zadanie5",
+        "documentation": {}
+    },
+    {
+        "label": "f_str",
+        "kind": 5,
+        "importPath": "prak9.zadanie5",
+        "description": "prak9.zadanie5",
+        "peekOfCode": "f_str = input('lambda x: x')\ng_str = input('lambda x: x')\nf = eval(f_str)\ng = eval(g_str)\ncomposed_function = compose(f, g)\nx = float(input(\"Введите значение x: \"))\nresult = composed_function(x)\nprint(f\"h({x}) =\", result)",
+        "detail": "prak9.zadanie5",
+        "documentation": {}
+    },
+    {
+        "label": "g_str",
+        "kind": 5,
+        "importPath": "prak9.zadanie5",
+        "description": "prak9.zadanie5",
+        "peekOfCode": "g_str = input('lambda x: x')\nf = eval(f_str)\ng = eval(g_str)\ncomposed_function = compose(f, g)\nx = float(input(\"Введите значение x: \"))\nresult = composed_function(x)\nprint(f\"h({x}) =\", result)",
+        "detail": "prak9.zadanie5",
+        "documentation": {}
+    },
+    {
+        "label": "f",
+        "kind": 5,
+        "importPath": "prak9.zadanie5",
+        "description": "prak9.zadanie5",
+        "peekOfCode": "f = eval(f_str)\ng = eval(g_str)\ncomposed_function = compose(f, g)\nx = float(input(\"Введите значение x: \"))\nresult = composed_function(x)\nprint(f\"h({x}) =\", result)",
+        "detail": "prak9.zadanie5",
+        "documentation": {}
+    },
+    {
+        "label": "g",
+        "kind": 5,
+        "importPath": "prak9.zadanie5",
+        "description": "prak9.zadanie5",
+        "peekOfCode": "g = eval(g_str)\ncomposed_function = compose(f, g)\nx = float(input(\"Введите значение x: \"))\nresult = composed_function(x)\nprint(f\"h({x}) =\", result)",
+        "detail": "prak9.zadanie5",
+        "documentation": {}
+    },
+    {
+        "label": "composed_function",
+        "kind": 5,
+        "importPath": "prak9.zadanie5",
+        "description": "prak9.zadanie5",
+        "peekOfCode": "composed_function = compose(f, g)\nx = float(input(\"Введите значение x: \"))\nresult = composed_function(x)\nprint(f\"h({x}) =\", result)",
+        "detail": "prak9.zadanie5",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "prak9.zadanie5",
+        "description": "prak9.zadanie5",
+        "peekOfCode": "x = float(input(\"Введите значение x: \"))\nresult = composed_function(x)\nprint(f\"h({x}) =\", result)",
+        "detail": "prak9.zadanie5",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "prak9.zadanie5",
+        "description": "prak9.zadanie5",
+        "peekOfCode": "result = composed_function(x)\nprint(f\"h({x}) =\", result)",
+        "detail": "prak9.zadanie5",
         "documentation": {}
     }
 ]
